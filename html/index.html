@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конструктор экспозиций</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<body>
+    <div class="osnovnoj-rabochij-jekran" class="overflow-hidden">
+        <div class="verhnjaja-panel">
+            <div class="fajl-two">
+                <div class="verhnie-knopki-fajla" class="block" action="main.py" method="GET">
+                    <p class="fajl">Файл схемы</p>
+                    <input type="file" multiple id="input2" accept="image/jpeg, image/png">
+                    
+                </div>
+                
+              </div>
+          <div class="vid-two">
+            <div class="frame-5" class="block">
+                <p class="vid">Вид</p>
+                
+            </div>
+            
+          </div>
+
+          <div class="spravka-two">
+            <div class="frame-6" class="block">
+                <!-- Include here the component "VerhnieKnopkiFajla" -->
+                <p class="spravka"> 
+                    <a href="#modOkno" style="text-decoration: none;" >Справка </a></p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="srednjaja-panel">
+            <!--<button type="button" class="btn" onclick="document.getElementById('fileInput').click();"> -->
+            <div class="dobavit-fajl-two">
+                <div class="knopki-na-paneli">
+                   
+                        <p class="dobavit-fajl">
+                       
+                        Добавить <br />
+                        файл
+                      </p>
+                      <input type="file" multiple id="input" accept="image/jpeg, image/png">
+                </div>   
+            </div>
+            </button>
+            <div class="sohranit-two">
+                <div class="knopki-na-paneli">
+                    <p class="sohranit">
+                    <a href="#modOkno3" class="textModOkno2"  style="text-decoration: none;">Сохранить</a></p>
+                </div>
+                
+            </div>
+            <div class="dobavit-metku-two">
+                <div class="knopki-na-paneli">
+                  <!-- Для выделения области на изображении--> 
+                  
+                  <!-- </div><img src="poloska.jpg" alt="p" onclick="koord(event);"> -->
+
+                    <p class="dobavit-metku">
+                       <a href="#zatemnenie" style="text-decoration: none;" >Добавить<br />
+                        метку
+                       </a>
+                    </p>
+                </div>
+               
+            </div>
+            <div class="prosmotr-two">
+                <div class="knopki-na-paneli">
+                    <a href="https://kurets.ru/images/grafica/virtualnuyu-ekskursiyu/VTourPo2Korpysy.html"  target="_blank"  class="prosmotr">Просмотр</a>
+                </div>
+                
+            </div>
+            <div class="sobrat-proekt-two">
+                <div class="knopki-na-paneli">
+                    <p class="sobrat-proekt">
+                        <a href="#"> Собрать<br />
+                        проект</a>
+                      </p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="allDivOblast"> 
+        <div class="rabochaja-oblast" id="rabochaja-oblast" >
+           
+            <a href="#" id="main">
+                <!-- div для модального окна справки-->
+                <div id="modOkno">
+                    <div id="okno2" >
+                        <a href="#" class="close">X</a>
+                        <br/>
+                        <a class="textModOkno" href="../html/main.html" style="text-decoration: none;"> Перейти на главную страницу </a><hr> </br>
+                        <a> Для создания экспозиции необходимо загрузить в него нужные панорамы. В итоге Вы получите список загруженных файлов.</a></br>
+                        <a>Чтобы создать карту виртуальной экскурсию выбираем нужную панораму, выделяем на ней область, на которую должен переходить пользователь, 
+                            и указываем фотографию, к которой должна вести эта область. В итоге получим визуальную карту помещения
+                             с маркерами, показывающими переходы между панорамами.</a>
+                        </a>
+                        <br/>
+                    </div>
+                </div>
+                <div id="modOkno3">
+                    <div id="okno3" >
+                        <a href="#" class="closeText" class="close">X</a>
+                        <br/>
+                        <div>
+                             <a>Файл успешно сохранен!</a></br>
+                        </div>
+                       
+                        
+                        <br/>
+                    </div>
+                </div>
+                <!-- div для модального окна создания выделенной области-->
+                <div id="zatemnenie">
+                    <div id="okno">
+                        <a href="#" class="close">X</a>
+                        <br/>
+                       
+                      
+                      <img src="../Images/13 кабинет.jpg" class="imgKoord" id="el" />
+                      <canvas id="gameCanvas" class="elCanvas" class="imgKoord" width="1000" height="260" margin="5"></canvas> 
+                    
+                     
+                       
+                       
+                        <br/>
+                        <div>
+                             <p id="results">Результат нажатия</p>
+                        <button id="addFile" class="dropdown_button"> Выбрать файл для открытия </button>
+                        <button  id="ActiveBtn" class="dropdown_button" onclick="drawRect()"> Сформировать область</button> 
+                        <button id="clearArrayBtn"class="dropdown_button" onclick="clearAr()" > Сбросить область </button>
+                        <button id="privazka" class="dropdown_button"
+                        onclick="show_list()"> Выбрать файл для привязки </button>
+                        </div>
+                       
+                        <div id="courses_id" class="courses">
+                            <li class="item"><a href=""></a></li>
+                            <li class="item"><a href=""></a></li>
+                            
+                        </div>
+                        
+                    </div>
+                  </div>
+              </a>
+            <div class="vidilenie" id="preview"></div>
+        </div>
+        <div class="rabochaja-oblast2" id="rabochaja-oblast2" >
+            
+            <div class="vidilenie1" id="preview1"></div>
+        </div>
+    </div>
+        <div class="nizhnjaja-panel"></div>
+      </div> 
+</body>
+
+<script src="../js/main.js"></script>
+<script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script> 
+</html>

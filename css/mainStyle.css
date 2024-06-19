@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+    overflow-x: hidden;
+    overflow-y: hidden;
+   }
+:root {
+    /* Colors */
+    --linen: rgba(255, 239, 230, 1);
+    --peru: rgba(198, 112, 68, 1);
+    --peru-2: rgba(198, 131, 97, 1);
+    --saddle-brown: rgba(156, 70, 26, 1);
+    --saddle-brown-2: rgba(111, 45, 11, 1);
+    --transparent-black: rgba(0, 0, 0, 0.25);
+  
+    /* Typographies */
+    /* inter-24-regular */
+    --inter-24-regular-family: "Inter";
+    --inter-24-regular-size: 24px;
+    --inter-24-regular-weight: 400;
+    --inter-24-regular-line-height: normal;
+  
+    /* inter-40-regular */
+    --inter-40-regular-family: "Inter";
+    --inter-40-regular-size: 40px;
+    --inter-40-regular-weight: 400;
+    --inter-40-regular-line-height: normal;
+  }
+  html, body { 
+    margin: 0px; 
+    padding: 0px; 
+    }
+.overflow-hidden {
+    overflow-x: hidden;
+  }
+
+.osnObl{
+  background-image: url('../Images/фонMain.gif');
+  background-size: cover;
+  background-color: rgba (0, 0, 0, 0.5);
+    
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px; 
+}
+body { 
+    width: 100%; 
+    height: 100%; 
+    background-color: var(--peru-2);
+  
+    
+  
+    }
+/*body { 
+  background-color: var(--peru-2);
+  padding: 46px 24px 39px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px; 
+  
+}*/
+.blockAvto{
+    width: 100%;
+    height: 100%;
+    margin-left: 80%;
+    margin-right: auto;
+}
+.textButton{
+  font-family: var(--inter-24-regular-family);
+  font-size: var(--inter-24-regular-size);
+  font-weight: var(--inter-24-regular-weight);
+  line-height: var(--inter-24-regular-line-height);
+  text-align: left;
+  color: var(--saddle-brown-2);
+  
+}
+.sozdanie{
+  text-align: center;
+  margin-top: 60%;
+ padding: 10px ;
+ margin: 5px; 
+ margin-bottom:3%;
+ margin-left: 25%;
+ border-radius: 10px;
+ width:50%;
+ background-color: var(--peru-2);
+ box-shadow: 0 4px 4px 0 var(--transparent-black);
+ border: 1px solid var(--saddle-brown);
+}
+.zagruzka{
+  text-align: center;
+  margin-top: 10%;
+  padding: 10px ;
+ margin: 5px; 
+ margin-left: 25%;
+ width:50%;
+ margin-bottom:30%;
+background-color: var(--peru-2);
+ box-shadow: 0 4px 4px 0 var(--transparent-black);
+ border: 1px solid var(--saddle-brown);
+}
+.btnChat{
+  left: 80%;
+  top: 10%;
+}
+.blockAvto .block1 {
+    display: table-cell;
+    width: 100%;
+    height: 10%;
+    
+  }
+.blockAvto .block2 {
+    display: table-cell;
+    width: 100%;
+    height: auto;
+    
+  }

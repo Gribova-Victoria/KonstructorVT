@@ -1,0 +1,529 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   }
+/* This is the project stylesheet */
+
+:root {
+    /* Colors */
+    --linen: rgba(255, 239, 230, 1);
+    --peru: rgba(198, 112, 68, 1);
+    --peru-2: rgba(198, 131, 97, 1);
+    --saddle-brown: rgba(156, 70, 26, 1);
+    --saddle-brown-2: rgba(111, 45, 11, 1);
+    --transparent-black: rgba(0, 0, 0, 0.25);
+  
+    /* Typographies */
+    /* inter-24-regular */
+    --inter-24-regular-family: "Inter";
+    --inter-24-regular-size: 24px;
+    --inter-24-regular-weight: 400;
+    --inter-24-regular-line-height: normal;
+  
+    /* inter-40-regular */
+    --inter-40-regular-family: "Inter";
+    --inter-40-regular-size: 40px;
+    --inter-40-regular-weight: 400;
+    --inter-40-regular-line-height: normal;
+}
+  .overflow-hidden {
+    overflow-x: hidden;
+  }
+  .block {
+    -webkit-flex: 1;
+    flex: 1;
+    }
+  body { 
+    width: 100%; 
+    height: 100%; 
+    background-color: var(--peru-2);
+  
+    } 
+.osnovnoj-rabochij-jekran {
+    background-color: var(--peru-2);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px; 
+    
+  }
+  .knopki-na-paneli {
+    max-width: 215px;
+   
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 var(--transparent-black);
+    border: 1px solid var(--saddle-brown);
+  }
+  .verhnie-knopki-fajla {
+    width: 272px;
+    height: 79px;
+    background-color: var(--saddle-brown-2);
+    box-shadow: 0 4px 4px 0 var(--transparent-black);
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+  .frame-5 {
+    width: 272px;
+    height: 79px;
+    background-color: var(--saddle-brown-2);
+    box-shadow: 0 4px 4px 0 var(--transparent-black);
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+  .frame-6 {
+    width: 272px;
+    height: 79px;
+    background-color: var(--saddle-brown-2);
+    box-shadow: 0 4px 4px 0 var(--transparent-black);
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+  .fajl-two {
+    position: relative;
+  }
+  
+  .spravka-two {
+    position: relative;
+  }
+  .vid-two {
+    position: relative;
+  }
+  .frame-5 {
+    position: relative;
+  }
+  .frame-6 {
+    position: relative;
+  }
+  .verhnie-knopki-fajla {
+    position: relative;
+  }
+  .prosmotr-two {
+    position: relative;
+  }
+  .sobrat-proekt-two {
+    position: relative;
+  }
+  
+  .verhnjaja-panel {
+    margin-bottom: 29px;
+    margin-left: 6px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .fajl:not(:last-of-type) {
+    margin-right: 75px;
+  }
+  .fajl {
+    width: 50%;
+    height: 100%;
+    color: var(--peru-2);
+    text-align: center;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    font-family: var(--inter-40-regular-family);
+    font-size: var(--inter-40-regular-size);
+    font-weight: var(--inter-40-regular-weight);
+    line-height: var(--inter-40-regular-line-height);
+  }
+  .vid {
+    width: 50%;
+    height: 100;
+    color: var(--peru-2);
+    text-align: center;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    font-family: var(--inter-40-regular-family);
+    font-size: var(--inter-40-regular-size);
+    font-weight: var(--inter-40-regular-weight);
+    line-height: var(--inter-40-regular-line-height);
+  }
+  .spravka {
+    width: 100%;
+    height: 100%;
+    color: var(--peru-2);
+    text-align: center;
+    position: absolute;
+    left: 5%;
+   top:10%;
+    font-family: var(--inter-40-regular-family);
+    font-size: var(--inter-40-regular-size);
+    font-weight: var(--inter-40-regular-weight);
+    line-height: var(--inter-40-regular-line-height);
+  }
+  .btn{
+    background-color: var(--peru-2);
+    text-decoration: none;
+  }
+  .srednjaja-panel {
+    max-width: 90%;
+    width: 90%;
+    margin-bottom: 22px;
+    margin-left: 6px;
+    padding: 18px 41px 21px 22px;
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+  .dobavit-fajl {
+    margin-right: 57px;
+  }
+  .dobavit-fajl-two {
+    padding: 4px 0 0;
+    position: relative;
+  }
+  .knopki-na-paneli {
+    width: 215px;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 var(--transparent-black);
+    border: 1px solid var(--saddle-brown);
+  }
+  .sohranit-two {
+    position: relative;
+  }
+  .knopki-na-paneli {
+    position: relative;
+    
+  }
+  .dobavit-metku-two {
+    position: relative;
+  }
+  .dobavit-fajl {
+    max-width: 120px;
+    color: var(--saddle-brown-2);
+    text-align: center;
+    position: absolute;
+    left: calc(50% - 120px / 2);
+    top: calc(50% - 58px / 2);
+    font-family: var(--inter-24-regular-family);
+    font-size: var(--inter-24-regular-size);
+    font-weight: var(--inter-24-regular-weight);
+    line-height: var(--inter-24-regular-line-height);
+  }
+  .sohranit {
+    margin-top: 4px;
+  }
+  .sohranit:not(:last-of-type) {
+    margin-right: 57px;
+  }
+  .sohranit {
+    color: var(--saddle-brown-2);
+    text-align: center;
+    position: absolute;
+    left: calc(50% - 126px / 2);
+    top: calc(50% - 29px / 2);
+    font-family: var(--inter-24-regular-family);
+    font-size: var(--inter-24-regular-size);
+    font-weight: var(--inter-24-regular-weight);
+    line-height: var(--inter-24-regular-line-height);
+  }
+  .dobavit-metku {
+    max-width: 113px;
+    color: var(--saddle-brown-2);
+    text-align: center;
+    position: absolute;
+    left: calc(50% - 113px / 2);
+    top: calc(50% - 58px / 2);
+    font-family: var(--inter-24-regular-family);
+    font-size: var(--inter-24-regular-size);
+    font-weight: var(--inter-24-regular-weight);
+    line-height: var(--inter-24-regular-line-height);
+  }
+  .prosmotr {
+    color: var(--saddle-brown-2);
+    text-align: center;
+    position: absolute;
+    left: calc(50% - 119px / 2);
+    top: calc(50% - 29px / 2);
+    font-family: var(--inter-24-regular-family);
+    font-size: var(--inter-24-regular-size);
+    font-weight: var(--inter-24-regular-weight);
+    line-height: var(--inter-24-regular-line-height);
+  }
+  .sobrat-proekt {
+    height: 100%;
+    width: 100px;
+    color: var(--saddle-brown-2);
+    display: flex;
+    text-align: center;
+    position: absolute;
+    left: calc(50% - 100px / 2);
+    top: calc(50% - 58px / 2);
+    font-family: var(--inter-24-regular-family);
+    font-size: var(--inter-24-regular-size);
+    font-weight: var(--inter-24-regular-weight);
+    line-height: var(--inter-24-regular-line-height);
+  }
+  .rabochaja-oblast {
+    width: 1088px;
+    height: 388px;
+    background-color: var(--linen);
+    margin-bottom: 33px;
+    margin-left: 6px;
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+  .nizhnjaja-panel {
+    width: -webkit-fill-available;
+    max-width: 1088px;
+    height: 50%;
+    background-color: var(--peru);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+  .lightbox{
+    height: 10px;
+    margin: 1px;
+    }
+
+img { 
+  width: 30%; 
+  max-width: 100%;
+  height: auto;
+  margin: 5px;
+}
+input[type=file]::-ms-browse { /* legacy edge */
+  width: 100%;
+}
+
+input[type=file]::file-selector-button { /* standard */
+  width: 100%;
+}
+
+input[type=file]::-webkit-file-upload-button { /* webkit */
+  width: 100%;
+}
+input{
+  opacity: 0;
+}
+#zatemnenie {
+  background: rgba(29, 29, 29, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#okno {
+  width: 80%;
+  height: 80%;
+  text-align:end;
+  padding: 15px;
+  border: 3px solid var(--saddle-brown-2);
+  border-radius: 10px;
+  color: var(--saddle-brown-2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #fff;
+}
+#zatemnenie:target {display: block;}
+.close {
+  display: inline-block;
+  border: 1px solid var(--saddle-brown-2);
+  color: var(--saddle-brown-2);
+  padding: 0 12px;
+  text-align: end;
+  margin: 10px;
+  text-decoration: none;
+  background: #f2f2f2;
+  font-size: 14pt;
+  cursor:pointer;
+}
+.close:hover {background: #e6e6ff;}
+a {
+  color: inherit;
+}
+#imgKoord{
+  width: 90%; 
+  max-width: 100%;
+  height: auto;
+  margin: 5px;
+}
+.imgKoord{
+  width: 90%; 
+  max-width: 100%;
+  height: auto;
+  margin: 5px;
+}
+.img-wrap {
+  border: 1px solid #ddd;
+  margin: 0 auto; /* раздел будет по центру */
+  padding: 0;
+  width: 128px;
+  height: 128px; /* по нужному размеру картинки */
+  position: relative;
+ }
+ .point {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  background: blue; /* цвет точки */
+  border-radius: 9px; /* половина размера точки */
+  cursor: move;
+  position: absolute;
+ }
+ #point-1 { /* начальное положение точки на картинке */
+  left: 50px;
+  top: 50px;
+ }
+.vidilenie{
+  width: 100%;
+  height: 100%;
+  color: blueviolet;
+}
+.GFG { 
+  outline: 1px solid black;
+} 
+#modOkno{
+  background: rgba(29, 29, 29, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#modOkno3{
+  background: rgba(29, 29, 29, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#okno2 {
+  width: 80%;
+  height: 80%;
+  text-align:end;
+  padding: 15px;
+  border: 3px solid var(--saddle-brown-2);
+  border-radius: 10px;
+  color: var(--saddle-brown-2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #fff;
+}
+#okno3 {
+  width: 40%;
+  height: 10%;
+
+  padding: 15px;
+  border: 3px solid var(--saddle-brown-2);
+  border-radius: 10px;
+  color: var(--saddle-brown-2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #fff;
+}
+.closeText{
+  font-family: var(--inter-24-regular-family);
+  font-size: var(--inter-24-regular-size);
+  font-weight: var(--inter-24-regular-weight);
+  line-height: var(--inter-24-regular-line-height);
+  text-align: end;
+  color: var(--saddle-brown-2);
+}
+#modOkno:target {display: block;}
+.textModOkno{
+  font-family: var(--inter-24-regular-family);
+  font-size: var(--inter-24-regular-size);
+  font-weight: var(--inter-24-regular-weight);
+  line-height: var(--inter-24-regular-line-height);
+  text-align: center;
+  color: var(--saddle-brown-2);
+}
+#modOkno3:target {display: block;}
+.textModOkno2{
+  font-family: var(--inter-24-regular-family);
+  font-size: var(--inter-24-regular-size);
+  font-weight: var(--inter-24-regular-weight);
+  line-height: var(--inter-24-regular-line-height);
+  text-align: center;
+  color: var(--saddle-brown-2);
+}
+.ActiveBtn{
+
+  visibility: hidden;
+}
+.yesActiveBtn{
+  visibility:visible;
+}
+.rabochaja-oblast2 {
+  width:100%;
+  height: 388px;
+  background-color: var(--linen);
+  margin-bottom: 33px;
+  margin-left: 15%;
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+.allDivOblast{
+  display: grid;
+   grid-template-columns: repeat(2, 1fr)
+}
+#gameCanvas{
+  position:absolute; top:5%; left:5%;
+  margin: 5px;
+  height: 20%;
+  width: 90%;
+  z-index:500;
+}
+.courses li {
+  color: var(--peru-2);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  list-style: none;
+  background-color: rgb(47, 47, 47);
+  font-family: var(--inter-24-regular-size);
+  border: 1px solid white;
+}
+
+.courses li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+}
+
+.courses li:hover {
+  background-color:var(--peru-2);
+  color: white;
+}
+.dropdown_button {
+  background-color: var(--peru-2);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  font-family: var(--inter-24-regular-size);
+  border: 1px solid #ffffff;
+}
+
+.courses {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
